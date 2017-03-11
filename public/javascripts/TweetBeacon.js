@@ -20,7 +20,7 @@ if (tweet.sentiment.score < 0) {
   this.color = "blue";
   }
   else if (tweet.sentiment.score > 0) {
-    this.color = 0xDDDD00;
+    this.color = "orange";
 }
   
   this.addBeam();
