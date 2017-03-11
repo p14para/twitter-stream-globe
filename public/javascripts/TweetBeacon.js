@@ -27,11 +27,11 @@ TweetBeacon = function(tweet) {
   }
   else if (tweet.sentiment.score >0 and and tweet.sentiment.score <= 0.5)
   {
-    this.score = 0x00ff00
+    this.score = 0x00ff00;
   }
   else
   {
-    this.color = 0x0000ff
+    this.color = 0x0000ff;
   }
   this.addBeam();
   this.addShockwave();
