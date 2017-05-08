@@ -33,7 +33,7 @@ TweetPublisher.start = function () {
 	if (!stream) {
 
 		// Connect to stream and filter by a geofence that is the size of the Earth
-		stream = twitter.stream('statuses/filter', { locations: '-37,0,-70,3' });
+		stream = twitter.stream('statuses/filter', { locations: '0,0,0,0' });
 
 		// When Tweet is received only process it if it has geo data
 		stream.on('tweet', function (tweet) {	
